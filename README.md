@@ -101,6 +101,18 @@
 
 ---
 
+## 治理理论发声系列（essays/）
+
+诺衡(Krites)@SynomosAI 治理理论公开长文系列，逐篇展开 XCGS 各支柱：
+
+| # | 文章 | 主题 |
+|---|---|---|
+| 01 | [AI 治理，不能等 AI 出事那天才想起来](essays/01-xcgs-overview.md) | XCGS 总纲：人治闭环 + 三大支柱 + 底座 |
+| 02 | [AI 管得住自己吗？](essays/02-human-in-the-loop.md) | 人治闭环专篇：自治叙事三重陷阱 + 四道闸门 |
+| 03 | [AI 造 AI，第一道闸门怎么设？](essays/03-a3-playbook.md) | A³ 法则操作手册：T1-T5 阈值 + 四维评分卡 + 评审清单 |
+| 04 | [给每个 AI 上户口](essays/04-ai-passport.md) | AI 护照专篇：身份码 + 出生记录 + 生命周期 |
+| 05 | [出了事，拿什么举证？](essays/05-evidence-chain.md) | 证据链专篇：六类证据工件 + 完整审计案例推演 |
+
 ## 关联仓库与资产
 
 - [SynomosAI Traceability Audit（AI 治理溯源审计，Phylax 诺卫署名）](https://github.com/Medxpert-org/traceability-audit)

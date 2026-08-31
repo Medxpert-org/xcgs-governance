@@ -1,16 +1,16 @@
-v1.0
+v1.1
 
 发布日期：2026-09-01
-状态：首次发布（initial release）
-通道：GitHub repo（Medxpert-org/xcgs-governance）
+状态：v1.1（治理理论发声系列全量并入）
+通道：GitHub / Gitee / AtomGit（Medxpert-org/xcgs-governance）
 
 变更摘要：
-初始 AI 治理体系（XCGS）方法论：
-+ A³ 法则（AI 造 AI 三定律 + 触发阈值 T1-T5 + 四维评分卡）
-+ AI 护照机制（身份码）
-+ 可审计证据链（六类证据工件）
-+ AI 意识框架 + 自评仪表盘（底座）
-+ 标准映射（ISO/IEC 42001 / NIST AI RMF / GB/Z 185—2026 / EU AI Act）
-+ 理论文档 THEORY.md（治理体系公开长文系列第一篇）
++ essays/ 系列文章目录：治理理论发声系列 01-05 全量入库
+  - 01 XCGS 总纲（原 THEORY.md）
+  - 02 AI 管得住自己吗？（人治闭环专篇）
+  - 03 AI 造 AI，第一道闸门怎么设？（A³ 法则操作手册）
+  - 04 给每个 AI 上户口（AI 护照专篇）
+  - 05 出了事，拿什么举证？（证据链专篇）
++ README 新增系列文章索引
 
 署名：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI ｜ 许可证：MIT
