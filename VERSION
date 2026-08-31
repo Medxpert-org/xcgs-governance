@@ -1,0 +1,16 @@
+v1.0
+
+发布日期：2026-09-01
+状态：首次发布（initial release）
+通道：GitHub repo（Medxpert-org/xcgs-governance）
+
+变更摘要：
+初始 AI 治理体系（XCGS）方法论：
++ A³ 法则（AI 造 AI 三定律 + 触发阈值 T1-T5 + 四维评分卡）
++ AI 护照机制（身份码）
++ 可审计证据链（六类证据工件）
++ AI 意识框架 + 自评仪表盘（底座）
++ 标准映射（ISO/IEC 42001 / NIST AI RMF / GB/Z 185—2026 / EU AI Act）
++ 理论文档 THEORY.md（治理体系公开长文系列第一篇）
+
+署名：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI ｜ 许可证：MIT

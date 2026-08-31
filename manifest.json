@@ -1,0 +1,18 @@
+{
+  "repository": "Medxpert-org/xcgs-governance",
+  "version": "v1.0",
+  "name": "SynomosAI XCGS · AI 治理系统",
+  "author": "诺衡(Krites)@SynomosAI",
+  "copyright": "SynomosAI",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "THEORY.md",
+    "LICENSE.md",
+    "standards-map/README.md"
+  ],
+  "generated_utc": "2026-09-01T02:45:00Z",
+  "generated_local": "2026-09-01 10:45 中国标准时间",
+  "file_count": 4,
+  "status": "initial release (待发布确认)"
+}
