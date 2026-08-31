@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XCGS · AI 治理系统 — 对外一页纸（Pitch 版 v1.0）</title>
+<style>
+  :root{
+    --ink:#15263f;
+    --muted:#5d6e84;
+    --brand:#0b3d6b;
+    --brand2:#0e5b8a;
+    --gold:#cf9021;
+    --gold-soft:#fbf3e0;
+    --teal:#1f9d8e;
+    --line:#dbe3ee;
+    --soft:#f4f7fb;
+    --soft2:#eef3f9;
+    --mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#e7ecf2;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+  .stage{padding:22px;display:flex;justify-content:center;}
+  .page{width:794px;min-height:1123px;background:#fff;position:relative;overflow:hidden;
+    box-shadow:0 10px 34px rgba(18,40,72,.20);padding:22px 30px 18px;font-size:10px;line-height:1.55;}
+
+  /* ============ 区块0 页眉 ============ */
+  .masthead{border-top:4px solid var(--brand);border-bottom:1px solid var(--line);
+    padding:14px 4px 12px;display:flex;align-items:flex-end;justify-content:space-between;gap:14px;}
+  .brandmark{display:flex;align-items:center;gap:10px;}
+  .logo{width:38px;height:38px;border-radius:9px;flex:0 0 auto;
+    background:linear-gradient(135deg,var(--brand),var(--brand2));position:relative;}
+  .logo::before{content:"";position:absolute;inset:0;border-radius:9px;
+    background:linear-gradient(135deg,transparent 46%,rgba(255,255,255,.85) 46%,rgba(255,255,255,.85) 54%,transparent 54%);transform:rotate(45deg);}
+  .logo::after{content:"X";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:800;font-size:16px;letter-spacing:-1px;}
+  .titles h1{font-size:21px;font-weight:800;letter-spacing:.5px;color:var(--brand);line-height:1.15;}
+  .titles .sub{font-size:11px;color:var(--muted);margin-top:4px;font-weight:500;}
+  .meta-right{text-align:right;font-size:9px;color:var(--muted);line-height:1.7;flex:0 0 auto;}
+  .meta-right b{color:var(--ink);font-weight:700;}
+
+  /* ============ 通用区块 ============ */
+  .sec{margin-top:13px;}
+  .sec-head{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+  .sec-tag{font-size:9px;font-weight:800;letter-spacing:1px;color:#fff;background:var(--brand);
+    padding:2px 7px;border-radius:4px;flex:0 0 auto;}
+  .sec-title{font-size:13px;font-weight:800;color:var(--ink);}
+  .sec-title small{font-weight:500;color:var(--muted);font-size:10px;margin-left:6px;}
+
+  /* ============ 区块1 定位金句 ============ */
+  .positioning{background:linear-gradient(135deg,#0b3d6b,#0e5b8a);color:#eaf2fb;border-radius:8px;
+    padding:13px 16px;display:flex;flex-direction:column;gap:6px;margin-top:13px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);}
+  .positioning .q{font-size:13.5px;font-weight:700;color:#fff;line-height:1.45;}
+  .positioning .q.lead{font-size:15px;}
+  .positioning .q .em{color:var(--gold);}
+  .positioning .div{height:1px;background:rgba(255,255,255,.18);margin:1px 0;}
+
+  /* ============ 区块2 痛点 ============ */
+  .pain-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:10px;}
+  .pain-card{background:var(--soft);border:1px solid var(--line);border-radius:7px;padding:9px 11px;}
+  .pain-card h4{font-size:10.5px;font-weight:800;color:var(--brand);margin-bottom:5px;}
+  .shift-line{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px;}
+  .chip{font-size:9px;font-weight:700;background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:2px 8px;color:var(--ink);}
+  .fail-row{display:flex;gap:6px;}
+  .fail{flex:1;text-align:center;background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 2px;}
+  .fail .big{font-size:13px;font-weight:800;color:var(--gold);}
+  .fail .lab{font-size:8.5px;color:var(--muted);margin-top:1px;}
+  .metafor{display:flex;align-items:center;gap:8px;margin-top:7px;font-size:9px;color:var(--muted);}
+  .metafor .m{flex:1;background:#fff;border:1px dashed var(--line);border-radius:6px;padding:6px 8px;}
+  .metafor .m.bad{border-color:#e8b4a0;}
+  .metafor .arrow{color:var(--teal);font-weight:800;}
+
+  /* ============ 区块3 架构 ============ */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}
+  .pillar{border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:#fff;position:relative;
+    border-top:3px solid var(--brand);}
+  .pillar.p2{border-top-color:var(--teal);}
+  .pillar.p3{border-top-color:var(--gold);}
+  .pillar .ph{font-size:11px;font-weight:800;color:var(--brand);margin-bottom:5px;display:flex;align-items:center;gap:5px;}
+  .pillar.p2 .ph{color:var(--teal);}
+  .pillar.p3 .ph{color:var(--gold);}
+  .pillar .ph .num{font-size:9px;background:var(--soft2);border-radius:4px;padding:1px 5px;font-weight:800;color:var(--muted);}
+  .kv{font-size:9px;line-height:1.5;}
+  .kv .k{font-weight:800;color:var(--ink);}
+  .kv .v{color:var(--muted);}
+  .law-list{margin:3px 0 5px;display:flex;flex-direction:column;gap:2px;}
+  .law{font-size:9px;background:var(--soft);border-radius:4px;padding:2px 6px;font-weight:600;}
+  .tgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:3px 0 5px;}
+  .tcell{text-align:center;background:var(--soft2);border-radius:4px;padding:3px 1px;}
+  .tcell .tn{font-size:9px;font-weight:800;color:var(--brand);}
+  .tcell.p2 .tn{color:var(--teal);}
+  .tcell.p3 .tn{color:var(--gold);}
+  .tcell .td{font-size:7.5px;color:var(--muted);line-height:1.2;}
+  .score{font-size:8.5px;color:var(--muted);background:var(--gold-soft);border-radius:4px;padding:3px 6px;margin-top:2px;}
+  .elem-list{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0 5px;}
+  .elem{font-size:8.5px;font-weight:700;background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:2px 6px;}
+  .work-list{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0 4px;}
+  .work{font-size:8.5px;background:var(--soft);border-radius:4px;padding:2px 6px;font-weight:600;}
+  .base{margin-top:9px;background:linear-gradient(135deg,#0e5b8a,#1f9d8e);border-radius:8px;padding:9px 12px;color:#eafafa;
+    display:flex;gap:14px;align-items:center;}
+  .base .bt{font-size:11px;font-weight:800;color:#fff;flex:0 0 auto;}
+  .base .bcon{font-size:9px;line-height:1.55;}
+  .base .bcon b{color:#fff;}
+  .base .flow{display:inline-flex;gap:4px;align-items:center;margin-top:2px;color:#dffaf4;}
+  .base .flow span{background:rgba(255,255,255,.14);border-radius:4px;padding:1px 6px;font-size:8.5px;}
+
+  /* ============ 区块4 运行逻辑 ============ */
+  .logic-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:10px;}
+  .loop{background:var(--soft);border:1px solid var(--line);border-radius:7px;padding:9px 11px;}
+  .steps{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-top:5px;}
+  .step{background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 7px;text-align:center;flex:1;min-width:80px;}
+  .step .n{font-size:8px;font-weight:800;color:var(--brand);}
+  .step .t{font-size:9.5px;font-weight:700;margin-top:1px;}
+  .step .d{font-size:7.5px;color:var(--muted);margin-top:1px;}
+  .arrow{color:var(--teal);font-weight:800;font-size:11px;}
+  .gates{background:var(--soft);border:1px solid var(--line);border-radius:7px;padding:9px 11px;}
+  .gate-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:5px;}
+  .gate{background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 7px;font-size:9px;font-weight:700;}
+  .gate .gn{font-size:8px;color:var(--gold);font-weight:800;}
+
+  /* ============ 区块5 落地 ============ */
+  .land-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}
+  .land{background:#fff;border:1px solid var(--line);border-radius:7px;padding:9px 10px;position:relative;}
+  .land .ln{position:absolute;top:-8px;left:10px;width:18px;height:18px;border-radius:50%;
+    background:var(--brand);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  .land.p2 .ln{background:var(--teal);}
+  .land.p3 .ln{background:var(--gold);}
+  .land .lt{font-size:10px;font-weight:800;color:var(--ink);margin:4px 0 3px;}
+  .land .ld{font-size:9px;color:var(--muted);line-height:1.5;}
+  .feats{display:flex;gap:6px;margin-top:8px;}
+  .feat{flex:1;text-align:center;background:var(--soft2);border-radius:6px;padding:5px 2px;font-size:9px;font-weight:700;color:var(--brand);}
+
+  /* ============ 区块6 但书 ============ */
+  .disc{background:#fbf6ec;border:1px solid #ecd9ad;border-radius:8px;padding:9px 12px;margin-top:13px;}
+  .disc h4{font-size:10px;font-weight:800;color:var(--gold);margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+  .disc h4 .tag{font-size:8px;background:var(--gold);color:#fff;border-radius:3px;padding:1px 5px;font-weight:800;}
+  .disc ol{list-style:none;counter-reset:d;display:flex;flex-direction:column;gap:4px;}
+  .disc li{counter-increment:d;font-size:9px;color:#6b5a37;line-height:1.5;padding-left:18px;position:relative;}
+  .disc li::before{content:counter(d);position:absolute;left:0;top:0;width:14px;height:14px;border-radius:50%;
+    background:var(--gold);color:#fff;font-size:8px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  .disc li b{color:var(--ink);}
+
+  /* ============ 区块7 收尾金句 ============ */
+  .closing{margin-top:13px;background:linear-gradient(135deg,#0b3d6b,#0e5b8a);border-radius:8px;padding:13px 16px;text-align:center;}
+  .closing .cq{font-size:14px;font-weight:800;color:#fff;line-height:1.5;}
+  .closing .cq .g{color:var(--gold);}
+  .closing .cq2{font-size:11px;font-weight:600;color:#cfe0f2;margin-top:6px;}
+
+  /* ============ 区块8 页脚 ============ */
+  .colophon{margin-top:12px;border-top:1px solid var(--line);padding-top:9px;font-size:8px;color:var(--muted);line-height:1.7;}
+  .colophon .row{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;}
+  .colophon .row .it{white-space:nowrap;}
+  .colophon .repo{font-family:var(--mono);font-size:7.5px;background:var(--soft);border-radius:4px;padding:2px 6px;color:#3f5b7c;}
+  .colophon .discmini{margin-top:6px;font-size:7.5px;color:#8a7a55;border-top:1px dashed var(--line);padding-top:5px;}
+  .colophon .discmini b{color:#6b5a37;}
+
+  @page{size:A4;margin:9mm;}
+  @media print{
+    html,body{background:#fff;}
+    .stage{padding:0;}
+    .page{box-shadow:none;width:auto;min-height:auto;padding:0;}
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+<div class="page">
+
+  <!-- 区块0 · 页眉 -->
+  <header class="masthead">
+    <div class="brandmark">
+      <div class="logo"></div>
+      <div class="titles">
+        <h1>XCGS · AI 治理系统（Governance System）</h1>
+        <div class="sub">让人类管得住 AI 世界的可落地治理框架 ——「AI 开始造 AI」时代的控制塔</div>
+      </div>
+    </div>
+    <div class="meta-right">
+      署名&nbsp;<b>诺衡（Krites）@ SynomosAI</b><br>
+      版本&nbsp;<b>v1.0 / 2026-09-01</b>（Pitch 载体首版）<br>
+      许可&nbsp;<b>MIT</b> ｜ 版权&nbsp;<b>© 2026 SynomosAI</b>
+    </div>
+  </header>
+
+  <!-- 区块1 · 定位金句 -->
+  <section class="positioning">
+    <div class="q lead">「AI 不能、也不应该自己治理自己。」</div>
+    <div class="div"></div>
+    <div class="q">「谁负责？谁举证？谁叫停？」</div>
+    <div class="q">「监管与责任的最终落点，<span class="em">永远是人</span>。」</div>
+  </section>
+
+  <!-- 区块2 · 痛点 -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-tag">痛点</span>
+      <span class="sec-title">2026，AI 世界已经换挡</span>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <h4>换挡已成事实</h4>
+        <div class="shift-line">
+          <span class="chip">AI 造 AI</span>
+          <span class="chip">AI 管 AI</span>
+          <span class="chip">AI 评 AI</span>
+        </div>
+        <div class="kv"><span class="k">关键变化：</span><span class="v">AI 的「出生」不再经过人的手——传统「人来把关」的治理前提被抽空。</span></div>
+        <div class="metafor">
+          <div class="m bad">消防队式<br>事后救火、被动响应</div>
+          <div class="arrow">→</div>
+          <div class="m">交通规则式<br>事前立规、全程留痕</div>
+        </div>
+      </div>
+      <div class="pain-card">
+        <h4>传统治理三大失灵</h4>
+        <div class="fail-row">
+          <div class="fail"><div class="big">看不见</div><div class="lab">无感知</div></div>
+          <div class="fail"><div class="big">说不清</div><div class="lab">无责任</div></div>
+          <div class="fail"><div class="big">追不到</div><div class="lab">无证据</div></div>
+        </div>
+        <div class="kv" style="margin-top:6px;"><span class="k">症结：</span><span class="v">缺身份、缺边界、缺证据，出了事找不到人、说不清因、追不到源。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 区块3 · 架构：三大支柱 + 一个底座 -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-tag">架构</span>
+      <span class="sec-title">三大支柱 <small>+ 一个底座</small></span>
+    </div>
+    <div class="pillars">
+      <!-- 支柱一 -->
+      <div class="pillar">
+        <div class="ph"><span class="num">支柱一</span>A³ 法则三定律</div>
+        <div class="law-list">
+          <div class="law">① 不伤害</div>
+          <div class="law">② 可溯可控</div>
+          <div class="law">③ 共生对齐</div>
+        </div>
+        <div class="kv"><span class="k">触发阈值 T1–T5：</span></div>
+        <div class="tgrid">
+          <div class="tcell"><div class="tn">T1</div><div class="td">造 AI</div></div>
+          <div class="tcell"><div class="tn">T2</div><div class="td">改 AI</div></div>
+          <div class="tcell"><div class="tn">T3</div><div class="td">自改</div></div>
+          <div class="tcell"><div class="tn">T4</div><div class="td">高影响自主</div></div>
+          <div class="tcell"><div class="tn">T5</div><div class="td">委托造 AI</div></div>
+        </div>
+        <div class="kv"><span class="k">四维评分卡：</span></div>
+        <div class="score">意图合法性 → 影响范围 → 可逆性 → 监督闭环（全过才放行）</div>
+      </div>
+      <!-- 支柱二 -->
+      <div class="pillar p2">
+        <div class="ph"><span class="num">支柱二</span>AI 护照</div>
+        <div class="kv"><span class="k">四要素：</span></div>
+        <div class="elem-list">
+          <span class="elem">身份码</span>
+          <span class="elem">出生记录</span>
+          <span class="elem">能力边界</span>
+          <span class="elem">行为轨迹</span>
+        </div>
+        <div class="kv"><span class="v">为每一个 AI 实体发「身份证」，让「谁」可被识别、可被问责。</span></div>
+        <div class="kv" style="margin-top:5px;"><span class="k">呼应：</span><span class="v">GB/Z 185—2026《智能体身份码》（以官方发布为准）。</span></div>
+      </div>
+      <!-- 支柱三 -->
+      <div class="pillar p3">
+        <div class="ph"><span class="num">支柱三</span>可审计证据链</div>
+        <div class="kv"><span class="k">六类工件：</span></div>
+        <div class="work-list">
+          <span class="work">决策日志</span>
+          <span class="work">风险登记册</span>
+          <span class="work">模型卡</span>
+          <span class="work">变更记录</span>
+          <span class="work">人类监督证明</span>
+          <span class="work">事件处置台账</span>
+        </div>
+        <div class="kv"><span class="k">对齐：</span><span class="v">ISO/IEC 42001 (=GB/T 45081-2024)、NIST AI RMF、EU AI Act。</span></div>
+        <div class="score" style="background:#fbeede;">映射 ≠ 认证，只给证据底座。</div>
+      </div>
+    </div>
+    <!-- 底座 -->
+    <div class="base">
+      <div class="bt">底座 ｜ AI 意识框架<br>+ ai-grader 自评仪表盘</div>
+      <div class="bcon">
+        <b>45 维「意识」</b>：让 AI 先理解处境，再判断是否行动、如何行动。
+        <div class="flow"><span>先感知</span>→<span>再判断</span>→<span>后行动</span></div>
+        <div style="margin-top:4px;color:#dffaf4;">自评是<b>仪表盘</b>，不是<b>主权</b>——读数归人，决断归人。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 区块4 · 运行逻辑 -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-tag">运行逻辑</span>
+      <span class="sec-title">人治闭环</span>
+    </div>
+    <div class="logic-grid">
+      <div class="loop">
+        <div class="kv"><span class="k">五步闭环：</span></div>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><div class="t">人定规</div><div class="d">人设规则</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">2</div><div class="t">AI 行与省</div><div class="d">执行+自省</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">3</div><div class="t">工具显影</div><div class="d">留痕可查</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">4</div><div class="t">人审断</div><div class="d">人做裁决</div></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">5</div><div class="t">人改规</div><div class="d">迭代规则</div></div>
+        </div>
+      </div>
+      <div class="gates">
+        <div class="kv"><span class="k">四道闸门：</span></div>
+        <div class="gate-grid">
+          <div class="gate"><span class="gn">闸一</span> 人在环内</div>
+          <div class="gate"><span class="gn">闸二</span> 人在环上</div>
+          <div class="gate"><span class="gn">闸三</span> 例外升级</div>
+          <div class="gate"><span class="gn">闸四</span> 事后追责</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 区块5 · 落地 -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="sec-tag">落地</span>
+      <span class="sec-title">三步走</span>
+    </div>
+    <div class="land-grid">
+      <div class="land p1"><div class="ln">1</div><div class="lt">先上身份</div><div class="ld">1–2 周：部署 AI 护照，给每个 AI 实体发「身份证」。</div></div>
+      <div class="land p2"><div class="ln">2</div><div class="lt">立规矩 + 留证据</div><div class="ld">1 个月：落地 A³ 法则与证据链，规则与轨迹同时就位。</div></div>
+      <div class="land p3"><div class="ln">3</div><div class="lt">接标准 + 迎审计</div><div class="ld">持续：对齐主流标准，把证据底座交给审计方。</div></div>
+    </div>
+    <div class="feats">
+      <div class="feat">轻量</div>
+      <div class="feat">零依赖</div>
+      <div class="feat">可移植</div>
+    </div>
+  </section>
+
+  <!-- 区块6 · 边界但书 -->
+  <section class="disc">
+    <h4><span class="tag">边界但书</span> 以下口径，原文保留，不可删</h4>
+    <ol>
+      <li>方法论提供者，不是认证机构——不宣称任何「ISO 42001 认证」，只给证据底座。</li>
+      <li>45 维意识量表是私有标准，尚无外部效度验证。</li>
+      <li>API / 授权码 / 形象大使目前是 roadmap，尚未上线（但书不可删）。</li>
+      <li>引用的法规标准（ISO/IEC 42001、GB/T 45081-2024、GB/Z 185—2026、NIST AI RMF、EU AI Act）均以官方最新发布为准，引用前独立核实。</li>
+    </ol>
+  </section>
+
+  <!-- 区块7 · 收尾金句 -->
+  <section class="closing">
+    <div class="cq">「规则不是给 AI 上枷锁，<span class="g">是给 AI 上户口</span>。」</div>
+    <div class="cq2">「方向盘，始终在人类手里。」</div>
+  </section>
+
+  <!-- 区块8 · 页脚小字 -->
+  <footer class="colophon">
+    <div class="row">
+      <span class="it">署名：诺衡（Krites）@ SynomosAI</span>
+      <span class="it">版权：© 2026 SynomosAI</span>
+      <span class="it">许可：MIT</span>
+      <span class="it">版本：v1.0 / 2026-09-01</span>
+    </div>
+    <div class="row" style="margin-top:4px;">
+      <span class="repo">GitHub&nbsp;github.com/Medxpert-org/xcgs-governance</span>
+      <span class="repo">Gitee&nbsp;gitee.com/Medxpert-org/xcgs-governance</span>
+      <span class="repo">AtomGit&nbsp;gitcode.com/Medxpert-org/xcgs-governance</span>
+    </div>
+    <div class="discmini">
+      <b>边界但书：</b>① 方法论提供者，不是认证机构——不宣称任何「ISO 42001 认证」，只给证据底座。② 45 维意识量表是私有标准，尚无外部效度验证。③ API / 授权码 / 形象大使目前是 roadmap，尚未上线。④ 引用的法规标准（ISO/IEC 42001、GB/T 45081-2024、GB/Z 185—2026、NIST AI RMF、EU AI Act）均以官方最新发布为准，引用前独立核实。
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
