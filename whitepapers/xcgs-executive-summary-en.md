@@ -39,7 +39,7 @@ IMDA's framework identifies four agentic risk classes. XCGS is complementary, no
 
 ### Honest Boundaries
 
-XCGS v1 is a theoretical framework with partially executable controls. It has not undergone third-party conformity assessment and does not constitute certification basis. GB/Z 185 is a guiding technical document (non-mandatory). The framework's companion API, authorization-code, and ambassador mechanisms are roadmap items, not yet live. Integration paths with existing ISO 42001 certification systems remain to be validated — XCGS positions itself as a *runtime supplement*, not a replacement for AIMS.
+XCGS v1 is a theoretical framework with partially executable controls. It has not undergone third-party conformity assessment and does not constitute certification basis. GB/Z 185 is a guiding technical document (non-mandatory). The framework's companion API and authorization-code mechanisms are roadmap items, not yet live; the ambassador mechanism has completed its first issuance batch under the AI Passport Specification (eight voice ambassadors, verifiable via the anchor chain in the ai-passport-spec repository), though their public content is not yet published. Integration paths with existing ISO 42001 certification systems remain to be validated — XCGS positions itself as a *runtime supplement*, not a replacement for AIMS.
 
 ### Roadmap
 

@@ -4,7 +4,7 @@
 **版权：** SynomosAI | **署名：** SynomosAI 治理线
 **对标基线：** ISO/IEC 42001:2023 · NIST AI RMF 1.0 · OWASP Agentic Top 10（2025）· CSA Agentic AI Addendum（2025-10，状态以官方为准）· 新加坡 IMDA Model AI Governance Framework for Agentic AI（2026-01）· 中国 GB/Z 185.1~.7—2026
 
-> 外事实限定：本文引用的第三方标准/草案状态均为撰写时点信息，正式发布前须经独立核实；XCGS 的配套 API、授权码与形象大使机制为 roadmap，尚未上线。
+> 外事实限定：本文引用的第三方标准/草案状态均为撰写时点信息，正式发布前须经独立核实；XCGS 的配套 API、授权码机制为 roadmap，尚未上线；形象大使机制已按《AI 护照规范》完成首批签发（8 名发声大使，签发记录可经 ai-passport-spec 仓锚点链验证），对外发声内容尚未发布。
 
 ---
 
