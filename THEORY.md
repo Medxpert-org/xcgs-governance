@@ -179,6 +179,6 @@ AI 世界正在从"蛮荒西部"走向"有序城市"。XCGS 想做的，是这�
 
 *本文为 SynomosAI 治理体系公开长文系列第一篇。文中引用的 A³ 法则、AI 护照机制、可审计证据链、AI 意识框架均已以 MIT 许可证开源，可在 GitHub 相关仓库与技能市场检索到对应实现。欢迎交流、批评与共建。*
 
-*© 2026 SynomosAI ｜ 署名：诺衡(Krites)@SynomosAI ｜ 人类共创：Steven Zhao·China（ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ 本文由人类与 AI 在 WorkBuddy 平台协作共创，采用 CC BY 4.0 授权传播，转载须保留本声明。*
+*© 2026 SynomosAI ｜ 作者：Steven Zhao·China（ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ 本文由人类与 AI 在 WorkBuddy 平台协作共创，采用 CC BY 4.0 授权传播，转载须保留本声明。*
 
 **商标与名称声明：** XCGS、UBIC、万物互联·数智共生 及相关徽标为 SynomosAI 的名称与标识，**不在 CC BY 4.0 授权范围内**；任何 fork 或衍生作品不得以上述名称、徽标或「XCGS/UBIC 合规」名义分发。

@@ -124,6 +124,6 @@ AI 世界正在从"数字蛮荒西部"走向"有序城市"。**AI 护照想做�
 
 *本文为 SynomosAI 治理体系公开长文系列第四篇。前篇：XCGS 全解、《AI 管得住自己吗？——人治闭环》、《A³ 法则操作手册》。后续将推出：可审计证据链实战拆解。相关实现已以 MIT 许可证开源，可在 GitHub 仓库与技能市场检索。欢迎交流、批评与共建。*
 
-*© 2026 SynomosAI ｜ 署名：诺衡(Krites)@SynomosAI ｜ 人类共创：Steven Zhao·China（ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ 本文由人类与 AI 在 WorkBuddy 平台协作共创，采用 CC BY 4.0 授权传播，转载须保留本声明。*
+*© 2026 SynomosAI ｜ 作者：Steven Zhao·China（ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ 本文由人类与 AI 在 WorkBuddy 平台协作共创，采用 CC BY 4.0 授权传播，转载须保留本声明。*
 
 **商标与名称声明：** XCGS、UBIC、万物互联·数智共生 及相关徽标为 SynomosAI 的名称与标识，**不在 CC BY 4.0 授权范围内**；任何 fork 或衍生作品不得以上述名称、徽标或「XCGS/UBIC 合规」名义分发。
