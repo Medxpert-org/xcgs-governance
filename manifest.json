@@ -1,6 +1,6 @@
 {
   "repository": "Medxpert-org/xcgs-governance",
-  "version": "v1.1",
+  "version": "v1.2",
   "name": "SynomosAI XCGS · AI 治理系统",
   "author": "诺衡(Krites)@SynomosAI",
   "copyright": "SynomosAI",
@@ -14,10 +14,12 @@
     "essays/03-a3-playbook.md",
     "essays/04-ai-passport.md",
     "essays/05-evidence-chain.md",
-    "standards-map/README.md"
+    "standards-map/README.md",
+    "whitepapers/xcgs-runtime-governance-v1.md",
+    "whitepapers/xcgs-executive-summary-en.md"
   ],
-  "generated_utc": "2026-08-31T19:28:00Z",
-  "generated_local": "2026-09-01 03:28 中国标准时间",
-  "file_count": 9,
-  "status": "published v1.1 (GitHub/Gitee/AtomGit)"
+  "generated_utc": "2026-09-04T17:45:00Z",
+  "generated_local": "2026-09-05 01:45 中国标准时间",
+  "file_count": 11,
+  "status": "ready v1.2 (committed locally; push requires human approval per release gate)"
 }

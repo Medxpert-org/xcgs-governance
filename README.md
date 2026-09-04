@@ -113,6 +113,17 @@
 | 04 | [给每个 AI 上户口](essays/04-ai-passport.md) | AI 护照专篇：身份码 + 出生记录 + 生命周期 |
 | 05 | [出了事，拿什么举证？](essays/05-evidence-chain.md) | 证据链专篇：六类证据工件 + 完整审计案例推演 |
 
+## 白皮书（whitepapers/）
+
+v1.2 新增：XCGS 从"治理方法体系"升级为**运行时治理框架（Agentic Runtime Governance）**——补上 ISO 42001 / NIST AI RMF / EU AI Act 共同缺失的执行时控制层。
+
+| 文件 | 内容 |
+|---|---|
+| [XCGS v1：智能体运行时治理框架（中文全文）](whitepapers/xcgs-runtime-governance-v1.md) | 五层运行时架构（身份锚定→权限→委托→行动治理→审计）· AL0-AL3 自治度四级轴（理论内核）· 12 项运行时控制项（RT-01~RT-12）· 与 IMDA Agentic 框架差异化站位 · GB/Z 185 双锚定 · FDA informs/recommends/acts 镜像映射 |
+| [XCGS v1 Executive Summary（English）](whitepapers/xcgs-executive-summary-en.md) | 国际传播用一页纸执行摘要，与中文白皮书配套独立成篇 |
+
+**对标基线（引用均以官方发布为准）：** ISO/IEC 42001:2023 · NIST AI RMF 1.0 · OWASP Agentic Top 10 · GB/Z 185.1~.7—2026 · IMDA Model AI Governance Framework for Agentic AI（2026-01）
+
 ## 关联仓库与资产
 
 - [SynomosAI Traceability Audit（AI 治理溯源审计，Phylax 诺卫署名）](https://github.com/Medxpert-org/traceability-audit)

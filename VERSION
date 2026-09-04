@@ -1,16 +1,18 @@
-v1.1
+v1.2
 
-发布日期：2026-09-01
-状态：v1.1（治理理论发声系列全量并入）
-通道：GitHub / Gitee / AtomGit（Medxpert-org/xcgs-governance）
+发布日期：2026-09-05
+状态：v1.2（运行时治理白皮书并入，理论站位升级）
+通道：GitHub / Gitee / AtomGit（Medxpert-org/xcgs-governance）——推送须人工放行
 
 变更摘要：
-+ essays/ 系列文章目录：治理理论发声系列 01-05 全量入库
-  - 01 XCGS 总纲（原 THEORY.md）
-  - 02 AI 管得住自己吗？（人治闭环专篇）
-  - 03 AI 造 AI，第一道闸门怎么设？（A³ 法则操作手册）
-  - 04 给每个 AI 上户口（AI 护照专篇）
-  - 05 出了事，拿什么举证？（证据链专篇）
-+ README 新增系列文章索引
++ whitepapers/ 新目录：
+  - xcgs-runtime-governance-v1.md：XCGS v1 智能体运行时治理框架白皮书（中文全文）
+    五层运行时架构 / AL0-AL3 自治度四级轴 / RT-01~RT-12 控制项
+    IMDA Agentic 框架差异化站位 / GB/Z 185 双锚定 / FDA 分级镜像映射
+  - xcgs-executive-summary-en.md：英文执行摘要（国际传播一页纸）
++ README 新增「白皮书」节与对标基线声明
 
-署名：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI ｜ 许可证：MIT
+定位升级：XCGS v1.2 = 治理方法体系（essays 01-05）+ 运行时治理框架（whitepapers v1）
+——补 ISO 42001 / NIST AI RMF / EU AI Act 缺失的执行时控制层
+
+署名：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI ｜ 许可证：MIT（白皮书 CC BY 4.0）
