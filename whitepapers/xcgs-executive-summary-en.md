@@ -2,7 +2,7 @@
 
 > **Status:** Release-ready. To be published together with the XCGS v1 white paper (Chinese full text: xcgs-runtime-governance-v1.md). Human push approval required per release gate.
 > **Purpose:** One-page front face for the XCGS white paper when released to international audiences. Chinese full text = 02 file; this summary stands alone.
-> **Author:** Krites@SynomosAI ｜ **Copyright:** SynomosAI · CC BY 4.0
+> **Author:** Krites@SynomosAI ｜ **Human co-creator:** Steven Zhao·China ｜ **AI co-creation:** human-AI collaboration, crafted on the WorkBuddy platform ｜ **Copyright:** SynomosAI · CC BY 4.0
 
 ---
 
@@ -49,4 +49,4 @@ XCGS v1 is a theoretical framework with partially executable controls. It has no
 
 ---
 
-*© 2026 SynomosAI ｜ Author: Krites@SynomosAI ｜ CC BY 4.0. This is a framework summary, not legal advice.*
+*© 2026 SynomosAI ｜ Author: Krites@SynomosAI ｜ Human co-creator: Steven Zhao·China ｜ Co-created by human and AI on the WorkBuddy platform ｜ CC BY 4.0. This is a framework summary, not legal advice.*

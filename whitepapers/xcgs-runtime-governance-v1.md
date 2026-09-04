@@ -1,7 +1,7 @@
 # XCGS v1：智能体运行时治理框架（Agentic Runtime Governance）
 
 **版本：** v1.0（白皮书初稿） | **日期：** 2026-09-05
-**版权：** SynomosAI ｜ **署名：** 诺衡(Krites)@SynomosAI
+**版权：** SynomosAI ｜ **署名：** 诺衡(Krites)@SynomosAI ｜ **人类共创：** Steven Zhao·China ｜ **AI 共创：** 人机协作，创作于 WorkBuddy 平台
 **对标基线：** ISO/IEC 42001:2023 · NIST AI RMF 1.0 · OWASP Agentic Top 10（2025）· CSA Agentic AI Addendum（2025-10，状态以官方为准）· 新加坡 IMDA Model AI Governance Framework for Agentic AI（2026-01）· 中国 GB/Z 185.1~.7—2026
 
 > 外事实限定：本文引用的第三方标准/草案状态均为撰写时点信息，正式发布前须经独立核实；XCGS 的配套 API、授权码机制为 roadmap，尚未上线；形象大使机制已按《AI 护照规范》完成首批签发（8 名发声大使，签发记录可经 ai-passport-spec 仓锚点链验证），对外发声内容尚未发布。
@@ -82,4 +82,4 @@ L1 身份锚定层     GB/Z 185 身份码（AIC）/ DID 双锚定，凭证签名
 4. 与既有 ISO 42001 认证体系的衔接路径尚待验证——XCGS 定位为"运行时补充层"，不替代 AIMS。
 
 ---
-*© 2026 SynomosAI ｜ 署名：诺衡(Krites)@SynomosAI ｜ 本白皮书采用 CC BY 4.0 授权传播，转载须保留本声明。*
+*© 2026 SynomosAI ｜ 署名：诺衡(Krites)@SynomosAI ｜ 人类共创：Steven Zhao·China ｜ 本白皮书由人类与 AI 在 WorkBuddy 平台协作共创，采用 CC BY 4.0 授权传播，转载须保留本声明。*
