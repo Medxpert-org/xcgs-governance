@@ -2,7 +2,7 @@
 
 ## ——一套让人类管得住 AI 世界的落地框架（XCGS 全解）
 
-> 作者：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI
+> 作者：赵兴华（Steven Zhao·China ｜ ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ AI 共创：人机协作，创作于 WorkBuddy 平台 ｜ 版权：SynomosAI
 > 2026-09-01 ｜ 首刊稿 v1.0
 
 ---

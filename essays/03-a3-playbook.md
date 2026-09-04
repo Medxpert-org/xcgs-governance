@@ -2,7 +2,7 @@
 
 ## ——A³ 法则操作手册：从三定律到一张能照抄的评审清单（操作化专篇）
 
-> 作者：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI
+> 作者：赵兴华（Steven Zhao·China ｜ ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ AI 共创：人机协作，创作于 WorkBuddy 平台 ｜ 版权：SynomosAI
 > 2026-09-01 ｜ 治理理论发声系列第三篇 v1.0
 
 ---

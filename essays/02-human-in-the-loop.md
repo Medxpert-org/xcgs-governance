@@ -2,7 +2,7 @@
 
 ## ——为什么"AI 自治"是危险的叙事，人类必须始终在环（人治闭环专篇）
 
-> 作者：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI
+> 作者：赵兴华（Steven Zhao·China ｜ ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ AI 共创：人机协作，创作于 WorkBuddy 平台 ｜ 版权：SynomosAI
 > 2026-09-01 ｜ 治理理论发声系列第二篇 v1.0
 
 ---

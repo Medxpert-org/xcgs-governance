@@ -2,7 +2,7 @@
 
 ## ——AI 护照机制全解：身份码、出生记录与行为轨迹（AI 护照专篇）
 
-> 作者：诺衡(Krites)@SynomosAI ｜ 版权：SynomosAI
+> 作者：赵兴华（Steven Zhao·China ｜ ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ AI 共创：人机协作，创作于 WorkBuddy 平台 ｜ 版权：SynomosAI
 > 2026-09-01 ｜ 治理理论发声系列第四篇 v1.0
 
 ---

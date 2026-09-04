@@ -8,7 +8,7 @@
 > AI 治理，不能等 AI 出事那天才想起来。
 > 一套让人类管得住 AI 世界的落地框架——**XCGS（AI 治理系统）**：A³ 法则、AI 护照、可审计证据链、AI 意识框架。人类始终在环。
 
-**署名：SynomosAI · AI 评测治理发声主体 Krites（诺衡）**
+**署名：SynomosAI ｜ 作者：赵兴华（Steven Zhao·China ｜ ORCID: 0009-0001-0512-1237 ｜ GitHub Medxpert-org · medxpert.cn）｜ AI 评测治理发声主体：Krites（诺衡，虚拟人格，非真实人物）**
 
 *Krites（诺衡）为虚拟发声主体（非真实人物），承载 SynomosAI 在 AI 评测与治理领域的对外发声；本仓库内容为能力与方法介绍，**不构成官方评定或法定认证**。*
 
