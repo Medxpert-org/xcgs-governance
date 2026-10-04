@@ -1,0 +1,33 @@
+name: governance-check
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  codeowners:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Locate CODEOWNERS
+        id: locate
+        run: |
+          F=""
+          for c in CODEOWNERS .github/CODEOWNERS docs/CODEOWNERS; do
+            if [ -f "$c" ]; then F="$c"; break; fi
+          done
+          if [ -z "$F" ]; then
+            echo "::error::CODEOWNERS not found"; exit 1
+          fi
+          echo "file=$F" >> "$GITHUB_OUTPUT"
+      - name: Require team-based owner
+        run: |
+          F="${{ steps.locate.outputs.file }}"
+          if ! grep -Eq '@[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' "$F"; then
+            echo "::error::CODEOWNERS has no team owner (@org/team)"; exit 1
+          fi
+          echo "team-based CODEOWNERS OK ($F)"
